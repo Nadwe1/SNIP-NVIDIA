@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style type="text/tailwindcss">
+        @theme {
+            --color-nvidia: #76B900;
+            --color-oblack: #1E1E1E;
+        }
+        .page-bg {
+          background-color: #000;
+          background-image:
+            radial-gradient(60rem 40rem at 0% 30%, rgba(118,185,0,0.35), transparent 70%),
+            radial-gradient(60rem 40rem at 100% 60%, rgba(118,185,0,0.28), transparent 70%),
+            radial-gradient(60rem 40rem at 0% 90%, rgba(118,185,0,0.25), transparent 70%),
+            linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+          background-size: auto, auto, auto, 48px 48px, 48px 48px;
+        }
+    </style>
+
+  </head>
+  <body class="page-bg text-white min-h-screen flex flex-col">
+    <nav class="sticky top-0 z-50 bg-black/70 backdrop-blur-md border-b border-nvidia/50 text-white">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="NVIDIA_logo.svg.png" alt="NVIDIA Logo" class="h-8 w-auto object-contain brightness-0 invert" />
+        </a>
+
+        <ul class="flex gap-6 font-bold text-sm">
+          <li><a href="products.html" class="hover:text-nvidia transition">Products</a></li>
+          <li><a href="support.html" class="hover:text-nvidia transition">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold mb-6">Products</h2>
+      <p class="mb-8">NVIDIA offers a wide range of products for gamers, creators, and professionals.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col hover:-translate-y-1 transition group">
+            <span class="my-4 text-xs font-bold uppercase tracking-wide text-nvidia">Graphics Cards</span>
+          <img src="rtx.jpg" alt="rtx 50 series" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">The Geforce Graphics Card</h3>
+          <p>Geforce graphics cards deliver exceptional performance for gaming and creative applications. With the newest generation being the Geforce RTX 50 Series.</p>
+          <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/" target="_blank" rel="noopener" class="mt-auto pt-4 self-start">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col hover:-translate-y-1 transition group">
+            <span class="my-4 text-xs font-bold uppercase tracking-wide text-nvidia">AI & Gaming</span>
+          <img src="DLSS.jpg" alt="NVIDIA DLSS" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">NVIDIA DLSS</h3>
+          <p>NVIDIA DLSS (Deep Learning Super Sampling) is an AI-powered upscaling technology that significantly improves frame rates while maintaining visual quality. The latest iteration, DLSS 4, brings even more advanced features and performance enhancements.</p>
+          <a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/" target="_blank" rel="noopener" class="mt-auto pt-4 self-start">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col hover:-translate-y-1 transition group">
+            <span class="my-4 text-xs font-bold uppercase tracking-wide text-nvidia">Cloud Gaming</span>
+          <img src="G-NOW.jpg" alt="Geforce NOW" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">Geforce NOW Cloud Gaming</h3>
+          <p>Geforce NOW is NVIDIA's cloud gaming service that allows you to play high-end games on any device with a stable internet connection. With a vast library of titles and seamless integration with your existing GeForce Experience setup, you can enjoy your favorite games without the need for expensive hardware.</p>
+          <a href="https://www.nvidia.com/en-us/geforce-now/" target="_blank" rel="noopener" class="mt-auto pt-4 self-start">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col hover:-translate-y-1 transition group">
+            <span class="my-4 text-xs font-bold uppercase tracking-wide text-nvidia">Streaming & Entertainment</span>
+          <img src="SHIELDTV.jpg" alt="SHIELD TV" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">SHIELD TV</h3>
+          <p>SHIELD TV is compact, stealth, and designed to disappear behind your entertainment center, right along with your cables. SHIELD Pro takes this performance to the next level. It’s built for the most demanding users and beautifully designed to be the perfect centerpiece of your entertainment center.</p>
+          <a href="https://www.nvidia.com/en-us/shield/" target="_blank" rel="noopener" class="mt-auto pt-4 self-start">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col hover:-translate-y-1 transition group">
+            <span class="my-4 text-xs font-bold uppercase tracking-wide text-nvidia">AI & Robotics</span>
+          <img src="jetson.jpg" alt="Jetson" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">Jetson</h3>
+          <p>NVIDIA Jetson™ is the leading platform for robotics and edge AI applications, offering you compact edge AI computers, supported by the NVIDIA JetPack™ SDK for accelerated software development.</p>
+          <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/" target="_blank" rel="noopener" class="mt-auto pt-4 self-start">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col hover:-translate-y-1 transition group">
+            <span class="my-4 text-xs font-bold uppercase tracking-wide text-nvidia">Display Technology</span>
+          <img src="G-Sync.jpg" alt="G-Sync Monitors" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">G-Sync Monitors</h3>
+          <p>G-Sync technology synchronizes your monitor's refresh rate with your GPU's output, eliminating screen tearing and reducing input lag for a smoother, more responsive gaming experience.</p>
+          <a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/" target="_blank" rel="noopener" class="mt-auto pt-4 self-start">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="border-t border-white/20">
+      <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- Column 1: socials -->
+    <div>
+      <h3 class="text-lg font-bold pb-3 mb-4 border-b border-gray-600">Follow NVIDIA</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://www.facebook.com/NVIDIA" target="_blank" rel="noopener" class="text-nvidia hover:underline">Facebook</a></li>
+        <li><a href="https://www.instagram.com/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/company/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">LinkedIn</a></li>
+        <li><a href="https://x.com/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">X</a></li>
+        <li><a href="https://www.youtube.com/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">YouTube</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 2: products -->
+    <div>
+      <h3 class="text-lg font-bold pb-3 mb-4 border-b border-gray-600">Products</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/" class="text-nvidia hover:underline">GeForce Graphics Cards</a></li>
+        <li><a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/" class="text-nvidia hover:underline">NVIDIA DLSS</a></li>
+        <li><a href="https://www.nvidia.com/en-us/geforce-now/" class="text-nvidia hover:underline">GeForce NOW</a></li>
+        <li><a href="https://www.nvidia.com/en-us/shield/" class="text-nvidia hover:underline">SHIELD TV</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: contact (moved from the support page) -->
+    <div>
+      <h3 class="text-lg font-bold pb-3 mb-4 border-b border-gray-600">Contact us</h3>
+      <p class="text-sm text-gray-300 leading-relaxed">
+        If you have any questions or need assistance, feel free to reach out to our support team.
+      </p>
+      <a href="TICKET-PAGE.html" class="inline-block mt-4 bg-nvidia text-black font-bold text-sm px-4 py-2 rounded hover:bg-nvidia/80 transition">
+        Open a Support Ticket
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-white/10 py-6 text-center text-sm text-neutral-400">
+    &copy; 2026 NVIDIA Corporation. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>

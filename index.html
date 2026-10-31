@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style type="text/tailwindcss">
+        @theme {
+            --color-nvidia: #76B900;
+        }
+        .page-bg {
+          background-color: #000;
+          background-image:
+            radial-gradient(60rem 40rem at 0% 30%, rgba(118,185,0,0.35), transparent 70%),
+            radial-gradient(60rem 40rem at 100% 60%, rgba(118,185,0,0.28), transparent 70%),
+            radial-gradient(60rem 40rem at 0% 90%, rgba(118,185,0,0.25), transparent 70%),
+            linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+          background-size: auto, auto, auto, 48px 48px, 48px 48px;
+        }
+    </style>
+
+  </head>
+  <body class="page-bg text-white min-h-screen flex flex-col">
+    <nav class="sticky top-0 z-50 bg-black/70 backdrop-blur-md border-b border-nvidia/50 text-white">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="NVIDIA_logo.svg.png" alt="NVIDIA Logo" class="h-8 w-auto object-contain brightness-0 invert" />
+        </a>
+
+        <ul class="flex gap-6 font-bold text-sm">
+          <li><a href="products.html" class="hover:text-nvidia transition">Products</a></li>
+          <li><a href="support.html" class="hover:text-nvidia transition">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="bg-[url('rtx.jpg')] min-h-[70vh] bg-left bg-cover">
+      <div class="container mx-auto p-4 min-h-[70vh] flex items-center">
+        <div class="text-white max-w-xl text-balance">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">The GeForce RTX 50 Series</h1>
+          <p class="mt-4 text-lg leading-relaxed">
+            GeForce RTX™ 50 Series GPUs bring game-changing capabilities to gamers and creators.
+          </p>
+          <a href="#" class="inline-block mt-6 bg-nvidia text-black font-bold px-4 py-2 rounded hover:bg-nvidia/80 transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold mb-6">Gaming</h2>
+      <p class="mb-8">NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI-powered DLSS, and much more in games and applications, on your desktop, laptop, in the cloud, or in your living room.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col text-center hover:-translate-y-1 transition group">
+          <img src="rtx.jpg" alt="rtx 50 series" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">The Geforce RTX 50 Series Graphics Card</h3>
+          <p>Geforce RTX 50 Series bring game-changing capabilities to gamers and creators. The all new DLSS 4 technology delivers unprecedented performance and visual quality.</p>
+          <a href="#" class="mt-auto pt-4 self-center">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col text-center hover:-translate-y-1 transition group">
+          <img src="spark.jpg" alt="NVIDIA RTX Spark" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">NVIDIA RTX Spark</h3>
+          <p>NVIDIA RTX Spark is a powerful graphics card designed for creators and gamers who demand the best performance. With advanced ray tracing and AI capabilities, it delivers stunning visuals and seamless gameplay.</p>
+          <a href="#" class="mt-auto pt-4 self-center">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col text-center hover:-translate-y-1 transition group">
+          <img src="reflex.jpg" alt="NVIDIA Reflex 2" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">NVIDIA Reflex 2</h3>
+          <p>Reflex technologies optimize the graphics pipeline for ultimate responsiveness, providing faster target acquisition, quicker reaction times, and improved aim precision in competitive games. Reflex 2 introduces Frame Warp (coming soon!), which further reduces latency based on the game’s latest mouse input.</p>
+          <a href="#" class="mt-auto pt-4 self-center">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold mb-6">AI & Data Center</h2>
+      <p class="mb-8">AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises that compute power, tools, and algorithms their teams need to do their life's work.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col text-center hover:-translate-y-1 transition group">
+          <img src="blackwell.jpg" alt="NVIDIA Blackwell Architecture" class="aspect-video object-cover object-center w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">NVIDIA Blackwell Architecture</h3>
+          <p>NVIDIA Blackwell-architecture GPUs pack 208 billion transistors and are manufactured using a custom-built TSMC 4NP process. All NVIDIA Blackwell products feature two reticle-limited dies connected by a 10 terabytes per second (TB/s) chip-to-chip interconnect in a unified single GPU.</p>
+          <a href="#" class="mt-auto pt-4 self-center">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 p-4 rounded-lg flex flex-col text-center hover:-translate-y-1 transition group">
+          <img src="dgx-spark.jpg" alt="NVIDIA DGX Spark" class="aspect-video object-cover w-full">
+          <h3 class="text-xl font-bold mt-4 mb-4">NVIDIA DGX Spark</h3>
+          <p>Powered by the NVIDIA GB10 Grace Blackwell Superchip, NVIDIA DGX Spark™ is a complete platform for local autonomous agents. Large local memory, powerful AI compute and the NVIDIA AI software stack enable agents and large models to run locally, reducing the need for cloud-based token generation resources. With a compact, power-efficient design, DGX Spark is built to run always-on agent workloads—right from your desktop.</p>
+          <a href="#" class="mt-auto pt-4 self-center">
+            <span class="underline decoration-nvidia decoration-2 underline-offset-4 group-hover:decoration-white">Learn More</span>
+            <span class="inline-block transition group-hover:translate-x-1">&gt;</span>
+          </a>
+        </div>
+
+        
+
+      </div>
+    </section>
+
+    <footer class="border-t border-white/20">
+      <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <div>
+      <h3 class="text-lg font-bold pb-3 mb-4 border-b border-gray-600">Follow NVIDIA</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://www.facebook.com/NVIDIA" target="_blank" rel="noopener" class="text-nvidia hover:underline">Facebook</a></li>
+        <li><a href="https://www.instagram.com/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/company/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">LinkedIn</a></li>
+        <li><a href="https://x.com/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">X</a></li>
+        <li><a href="https://www.youtube.com/nvidia" target="_blank" rel="noopener" class="text-nvidia hover:underline">YouTube</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold pb-3 mb-4 border-b border-gray-600">Products</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/" class="text-nvidia hover:underline">GeForce Graphics Cards</a></li>
+        <li><a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/" class="text-nvidia hover:underline">NVIDIA DLSS</a></li>
+        <li><a href="https://www.nvidia.com/en-us/geforce-now/" class="text-nvidia hover:underline">GeForce NOW</a></li>
+        <li><a href="https://www.nvidia.com/en-us/shield/" class="text-nvidia hover:underline">SHIELD TV</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold pb-3 mb-4 border-b border-gray-600">Contact us</h3>
+      <p class="text-sm text-gray-300 leading-relaxed">
+        If you have any questions or need assistance, feel free to reach out to our support team.
+      </p>
+      <a href="TICKET-PAGE.html" class="inline-block mt-4 bg-nvidia text-black font-bold text-sm px-4 py-2 rounded hover:bg-nvidia/80 transition">
+        Open a Support Ticket
+      </a>
+    </div>
+
+  </div>
+
+  <div class="border-t border-white/10 py-6 text-center text-sm text-neutral-400">
+    &copy; 2026 NVIDIA Corporation. All rights reserved.
+  </div>
+</footer>
+    
+  </body>
+</html>
+
+
+<!-- Jangan Lupa tambahin lebih banyak konten ke page nya -->
+ <!-- buat footer -->
+ <!-- gabungin contact dengan home page (footer) -->
+  <!-- tambahain ambience ke navbarnya biar ga awkward -->
+   <!-- ubah bg hitam di home jadi background yang lebih menarik -->
